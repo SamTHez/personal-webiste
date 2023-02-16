@@ -10,3 +10,53 @@
     --color-8: #82DD03;
     
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+}
+
+a {
+    display: block;
+    margin: 0;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background-image: linear-gradient(var(--color-1),var(--color-2) 10px, var(--color-1));
+}
+
+li {
+    float: left;
+    border-right: 1px solid var(--color-1);
+ }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--color-1);
+}
+
+.navbar-f {
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.active {
+    background-image: linear-gradient(var(--color-2),var(--color-3) 10px, var(--color-2));
+}
